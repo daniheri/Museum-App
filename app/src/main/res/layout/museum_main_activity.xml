@@ -20,7 +20,7 @@
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="match_parent"
-               android:text="Museum Indonesia"
+               android:text="@string/museum_indonesia"
                android:textAllCaps="true"
                android:textSize="16sp"
                android:textColor="@color/white"/>
@@ -36,6 +36,12 @@
             android:textStyle="bold"
             android:layout_centerInParent="true"
             android:text="@string/museum_indonesia"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 
