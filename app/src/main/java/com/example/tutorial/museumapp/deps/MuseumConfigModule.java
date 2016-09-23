@@ -15,6 +15,10 @@ public class MuseumConfigModule {
 
     private final String baseUrl;
 
+    public MuseumConfigModule() {
+        this(null);
+    }
+
     public MuseumConfigModule(String baseUrl) {
         this.baseUrl = baseUrl;
     }

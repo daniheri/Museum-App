@@ -30,7 +30,7 @@ public class MuseumMainPresenter {
             @Override
             public void onSuccess(ProvinsiResponse response) {
                 view.showProgress(View.GONE);
-                view.showData(response);
+                view.setData(response.data);
             }
         }));
     }

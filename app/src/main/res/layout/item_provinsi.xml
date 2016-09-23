@@ -1,0 +1,33 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.tutorial.museumapp.mainpage.MuseumRecylerViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/icon_menu" />
+
+        <TextView
+            android:id="@+id/provinsi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="@{viewModel.provinsi}" />
+
+    </LinearLayout>
+
+</layout>

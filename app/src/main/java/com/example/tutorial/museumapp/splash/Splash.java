@@ -21,11 +21,6 @@ public class Splash extends MuseumBaseActivity implements Runnable {
     }
 
     @Override
-    protected void setupPresenter() {
-
-    }
-
-    @Override
     protected void onViewReady(Bundle savedInstanceState) {
         new Handler().postDelayed(this, SPLASH_DISPLAY_LENGTH);
     }

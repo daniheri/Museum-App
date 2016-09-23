@@ -1,5 +1,6 @@
 package com.example.tutorial.museumapp.deps;
 
+import com.example.tutorial.museumapp.base.MuseumBaseActivity;
 import com.example.tutorial.museumapp.mainpage.MuseumMainActivity;
 
 import javax.inject.Singleton;

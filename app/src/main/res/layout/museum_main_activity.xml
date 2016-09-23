@@ -7,10 +7,11 @@
            type="com.example.tutorial.museumapp.mainpage.MuseumMainViewModel"/>
    </data>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/grey">
+        android:background="@color/grey"
+        android:orientation="vertical">
 
        <android.support.v7.widget.Toolbar
            android:layout_width="match_parent"
@@ -27,15 +28,11 @@
 
        </android.support.v7.widget.Toolbar>
 
-        <TextView
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="24sp"
-            android:textAllCaps="true"
-            android:textStyle="bold"
-            android:layout_centerInParent="true"
-            android:text="@string/museum_indonesia"/>
+            android:layout_height="match_parent"
+            />
 
         <ProgressBar
             android:id="@+id/progress_bar"
@@ -43,6 +40,6 @@
             android:layout_height="match_parent"
             android:visibility="gone"/>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </layout>
